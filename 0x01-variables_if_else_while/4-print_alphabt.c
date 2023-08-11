@@ -17,6 +17,6 @@ int main(void)
 		if (i != 113 && i != 101)
 			putchar(i);
 	}
-	putchar('\n');
+	putchar("\n");
 	return (0);
 }
