@@ -12,10 +12,10 @@ int main(void)
 {
 	int i;
 
-	for (i = 123; i < 97; i--)
+	for (i = 122; i > 96; i--)
 	{
 		putchar(i);
 	}
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }
