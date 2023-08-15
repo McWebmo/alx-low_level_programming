@@ -17,12 +17,12 @@ void print_to_98(int n)
   {
     while (n <= 98)
     {
-     printf(n);
+     printf("%d", n);
      n++;
      if (n != 98)
       {
        printf(", ");
-       printf("");
+       printf(" ");
       }
     }
   }
@@ -30,21 +30,15 @@ void print_to_98(int n)
   {
     while (n <= 98)
     {
-     printf(n);
+     printf("%d", n);
      n--;
      if (n != 98)
       {
        printf(", ");
-       printf("");
+       printf(" ");
       }
     }
   }
   else
-    printf(98);
-}
-
-int main(void)
-{
-  print_to_98(0);
-  return (0);
+    printf("%d", 98);
 }
