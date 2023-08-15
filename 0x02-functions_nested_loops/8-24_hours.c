@@ -20,7 +20,7 @@ void jack_bauer(void)
 			{
 				for (m2 = 48; m2 <= 57; m2++)
 				{
-					if (h1 != 2 && h2 != 3 && m1 != 5 && m2 != 9)
+					if (h1 <= 50 && h2 <= 51 && m1 <= 53 && m2 <= 57)
 					{
 						_putchar(h1);
 						_putchar(h2);
