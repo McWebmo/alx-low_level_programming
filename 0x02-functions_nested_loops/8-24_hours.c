@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int h1, h2, m1, m3;
 
