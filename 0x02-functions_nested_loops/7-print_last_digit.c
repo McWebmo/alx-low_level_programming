@@ -12,7 +12,7 @@
 int print_last_digit(int n)
 {
 	int last;
-	int las_ascii;
+	int last_ascii;
 
 	if (n >= 0)
 	{
