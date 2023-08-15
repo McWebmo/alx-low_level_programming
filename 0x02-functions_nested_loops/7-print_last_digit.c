@@ -6,7 +6,7 @@
  * Description: by getting the number mod 10
  * @n: integer n
  *
- * Return: 0
+ * Return: last digit
  */
 
 int print_last_digit(int n)
@@ -14,6 +14,8 @@ int print_last_digit(int n)
 	int last = n % 10;
 
 	_putchar(last);
+	_putchar(last);
+	_putchar('\n');
 
 	return (last);
 }
