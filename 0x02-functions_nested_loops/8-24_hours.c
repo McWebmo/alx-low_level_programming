@@ -12,7 +12,7 @@ void jack_bauer(void)
 {
 	int h1, h2, m1, m2;
 
-	while (h1 != 50 && h2 != 51 && m1 != 53 && m2 != 57)
+	do
 	{
 		for (h1 = 48; h1 < 51; h1++)
 		{
@@ -32,6 +32,7 @@ void jack_bauer(void)
 				}
 			}
 		}
-	}
+	} while (h1 != 50 && h2 != 51 && m1 != 53 && m2 != 57);
+
 }
 
