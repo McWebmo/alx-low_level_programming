@@ -25,7 +25,7 @@ int main(void)
 			else
 				_putchar('$');
 		}
-		_putchar("\n");
+		_putchar('\n');
 	}
 
 }
