@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * times_table - prints the times tables from 0 to 9
  *
- * Description:
+ * Description: prints it without using stdio.h library
  *
- * Return: 0
+ * Return: void
  */
 
 void times_table(void)
@@ -28,7 +28,6 @@ void times_table(void)
 			}
 			else
 			{
-				
 				if (b != 0)
 				{
 					_putchar(',');
@@ -37,8 +36,6 @@ void times_table(void)
 				_putchar(((a * b) / 10) + '0');
 				_putchar(((a * b) % 10) + '0');
 			}
-
-			
 		}
 		_putchar('\n');
 	}
