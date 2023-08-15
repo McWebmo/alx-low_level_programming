@@ -17,15 +17,12 @@ int print_last_digit(int n)
 	if (n >= 0)
 	{
 		last = n % 10;
-		last_ascii = last + 48;
 	}
 	else if (n < 0)
 	{
-		n = n * -1;
-		last = n % 10;
-		last_ascii = last + 48;
+		last = -1 * (n % 10);
 	}
-	_putchar(last_ascii);
+	_putchar(last + '0');
 
 	return (last);
 }
