@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * jack_bauer - a very long day
  *
- * Description:
+ * Description: a clock
  *
- * Return: 0
+ * Return: void
  */
 
 void jack_bauer(void)
 {
 	int h1, h2, m1, m2;
 
-	while (h1 != 2 && h2 != 3 && m1 != 5 && m2 != 9)
+	for (h1 = 48; h1 < 51; h1++)
 	{
-		for (h1 = 48; h1 < 51; h1++)
+		for (h2 = 48; h2 <= 57; h2++)
 		{
-			for (h2 = 48; h2 <= 57; h2++)
+			for (m1 = 48; m1 < 54; m1++)
 			{
-				for (m1 = 48; m1 < 54; m1++)
+				for (m2 = 48; m2 <= 57; m2++)
 				{
-					for (m2 = 48; m2 <= 57; m2++)
+					if (h1 != 2 && h2 != 3 && m1 != 5 && m2 != 9)
 					{
 						_putchar(h1);
 						_putchar(h2);
