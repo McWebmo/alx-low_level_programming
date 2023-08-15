@@ -12,7 +12,7 @@
 int _abs(int n)
 {
 	if (n < 0)
-		n = ((n * *2) / n);
+		n = ((n * n) / n);
 
 	return (n);
 }
