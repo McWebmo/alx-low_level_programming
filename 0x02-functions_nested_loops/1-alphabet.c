@@ -1,16 +1,14 @@
 #include "main.h"
 
-/**
- * main - Entry point
- *
- * Description:
- *
- * Return: 0
- */
-
-int main(void)
+void print_alphabet(void)
 {
+	int i = 0;
 
-	print_alphabet();
+	for (i = 97; i < 123; i++)
+		char c = i
+		_putchar(c);
+
+	_putchar('\n')
 	return (0);
+
 }
