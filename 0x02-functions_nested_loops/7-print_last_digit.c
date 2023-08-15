@@ -11,9 +11,17 @@
 
 int print_last_digit(int n)
 {
-	int last = n % 10;
-	int last_ascii = last + 48;
-
+	if (n >= 0)
+	{
+		int last = n % 10;
+		int last_ascii = last + 48;
+	}
+	else if (n < 0)
+	{
+		n = n * -1;
+		int last = n % 10;
+		int last_ascii = last + 48;
+	}
 	_putchar(last_ascii);
 
 	return (last);
