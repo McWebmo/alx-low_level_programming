@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - prints the times tables from 0 to 9
+ * print_times_table - prints the times tables from 0 to n
  *
  * Description: prints it without using stdio.h library
  *
