@@ -29,7 +29,7 @@ void print_times_table(int n)
 					}
 					_putchar((a * b) + '0');
 				}
-				else if (a * b >= 10)
+				else if (a * b >= 10 && a * b < 100)
 				{
 					if (b != 0)
 					{
@@ -55,5 +55,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-
 }
