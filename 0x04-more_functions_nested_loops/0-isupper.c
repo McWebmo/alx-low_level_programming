@@ -9,7 +9,7 @@
  * Return: if c is upper case it returns 1, otherwise it returns 0
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (1);
