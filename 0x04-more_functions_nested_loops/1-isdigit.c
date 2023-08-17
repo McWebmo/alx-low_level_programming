@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigit - to know if int c is a digit 
+ * _isdigit - to know if int c is a digit
  *
  * Description: detects it through checking its ascii number
  * @c: parameter c is an integer
