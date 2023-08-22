@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - Entry point
+ * _puts2 - Entry point
  *
  * Description: prints a string to stdout
  *
@@ -10,7 +10,7 @@
  * Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int c;
 
