@@ -14,7 +14,7 @@ int _strlen(char *s)
 	int counter = 0;
 	int len = 0;
 
-	while (*(s + counter) != " ")
+	while (*(s + counter) != 32)
 	{
 		len++;
 		counter++;
