@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts2 - Entry point
+ * puts2 - Entry point
  *
  * Description: prints a string to stdout
  *
