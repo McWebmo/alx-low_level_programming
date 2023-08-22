@@ -21,11 +21,11 @@ void print_rev(char *s)
 
 
 
-	while (*(s + len) != *(s - 1))
+	do
 	{
 		_putchar(*(s + len));
 		len--;
-	}
+	}while (*(s + len) != *(s))
 	_putchar('\n');
 
 }
