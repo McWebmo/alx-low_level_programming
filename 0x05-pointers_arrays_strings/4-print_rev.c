@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_rev - Entry point
  *
- * Description:
+ * Description: prints a string in reverse
  *
- * Return: 0
+ * @s: a string pointer
+ *
+ * Return: void
  */
 
 void print_rev(char *s)
@@ -26,7 +28,8 @@ void print_rev(char *s)
 		_putchar(*(s + len));
 		len--;
 	}
-	_putchar(*s);
+	if len <= 0
+		_putchar(*s);
 
 	_putchar('\n');
 
