@@ -19,6 +19,7 @@ void print_rev(char *s)
 		counter++;
 	}
 
+	len = len - 1;
 
 	while (*(s + len) != *(s))
 	{
@@ -27,5 +28,6 @@ void print_rev(char *s)
 	}
 	_putchar(*s);
 
+	_putchar('\n');
 
 }
