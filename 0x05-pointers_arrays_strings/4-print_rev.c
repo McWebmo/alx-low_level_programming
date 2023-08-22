@@ -20,12 +20,12 @@ void print_rev(char *s)
 	}
 
 
-
-	do
+	while (*(s + len) != *(s))
 	{
 		_putchar(*(s + len));
 		len--;
-	}while (*(s + len) != *(s));
+	}
+	_putchar(*s);
 
 	_putchar('\n');
 
