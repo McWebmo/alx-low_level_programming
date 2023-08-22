@@ -20,22 +20,6 @@ int _strlen(char *s)
 		counter++;
 	}
 
-	return (len + 1);
+	return (len);
 
 }
-
-/*
-
- int main(void){
-
-	char *str;
-  int len;
-
-	str = "My first strleny";
-
-	printf("%c\n", *(str + 16));
-	return (0);
-
-}
-
-*/
