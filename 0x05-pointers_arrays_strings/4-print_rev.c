@@ -10,8 +10,16 @@
 
 void print_rev(char *s)
 {
+	int counter = 0;
+	int len = 0;
 
-	int len = _strlen(s);
+	while (*(s + counter) != 0)
+	{
+		len++;
+		counter++;
+	}
+
+
 
 	while (*(s + len) != *s)
 	{
