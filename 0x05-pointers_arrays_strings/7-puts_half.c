@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * puts_half - Entry point
  *
- * Description:
+ * Description: prints the second half of any string
  *
- * Return: 0
+ * @str: string
+ *
+ * Return: void
  */
 
 void puts_half(char *str)
