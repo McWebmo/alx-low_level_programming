@@ -26,6 +26,8 @@ void rev_string(char *s)
 		counter++;
 	}
 
+	right = len - 1;
+
 	for (left = 0; left != right; left++)
 	{
 		temp = *(s + left);
