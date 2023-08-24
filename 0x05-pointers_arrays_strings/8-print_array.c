@@ -1,14 +1,26 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_array - Entry point
  *
- * Description:
+ * Description: prints a number of elements n of an array of integers
  *
- * Return: 0
+ * @a: array of integers
+ * @n: number of elements to be printed
+ *
+ * Return: void
  */
 
-int main(void)
+void print_array(int *a, int n)
 {
+
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		_putchar(a[i] + '0');
+		_putchar(',');
+		_putchar(' ');
+	}
 
 }
