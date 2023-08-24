@@ -28,12 +28,12 @@ void rev_string(char *s)
 
 	right = len - 1;
 
-	for (left = 0; left != right; left++)
+	for (left = 0; left != right; )
 	{
 		temp = *(s + left);
 		*(s + left) = *(s + right);
 		*(s + right) = temp;
-		
+		left++;
 		right--;
 	}
 
