@@ -1,11 +1,13 @@
 
 
 /**
- * main - Entry point
+ * *_strcpy - Entry point
  *
- * Description:
+ * Description: copies from source to destination
  *
- * Return: 0
+ * @dest: destination
+ * @src: source
+ * Return: pointer to dest
  */
 
 char *_strcpy(char *dest, char *src)
