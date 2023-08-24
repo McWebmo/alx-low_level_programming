@@ -13,10 +13,12 @@ void rev_string(char *s)
 {
 
 
-	// we need to reverse 
-
 	int counter = 0;
 	int len = 0;
+	int right = len;
+	int left = 0;
+	char temp;
+
 
 	while (*(s + counter) != 0)
 	{
@@ -24,15 +26,12 @@ void rev_string(char *s)
 		counter++;
 	}
 
-	int right = len;
-	int left = 0;
-
-	for (; left != right; ;)
+	for (; left != right; left++;)
 	{
 		temp = *(s + left);
 		*(s + left) = *(s + right);
 		*(s + right) = temp;
-		left++;
+		
 		right--;
 	}
 
