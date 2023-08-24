@@ -13,28 +13,16 @@ void rev_string(char *s)
 {
 
 
-	int counter = 0;
-	int len = 0;
-	int right = len;
-	int left = 0;
-	char temp;
+	int len, i;
 
+	for (len = 0; s[len] != 0; ++len)
+		;
 
-	while (*(s + counter) != 0)
+	for (i = 0; i < len/2; i++)
 	{
-		len++;
-		counter++;
+		temp = s[i];
+		s[i] = s[l - i - 1];
+		s[l - i - 1] = temp;
 	}
-
-
-	for (left = 0; left != right; )
-	{
-		temp = *(s + left);
-		*(s + left) = *(s + right);
-		*(s + right) = temp;
-		left++;
-		right--;
-	}
-
 
 }
