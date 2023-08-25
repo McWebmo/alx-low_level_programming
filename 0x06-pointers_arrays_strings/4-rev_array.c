@@ -1,4 +1,4 @@
-
+#include "main.h"
 
 /**
  * main - Entry point
@@ -16,9 +16,9 @@ void reverse_array(int *a, int n)
 
 	for (; i < n / 2; i++)
 	{
-		temp = a[n];
-		a[n] = a[n - i];
-		a[n - i] = temp;
+		temp = *(a + n);
+		*(a + n) = *(a + n - i);
+		*(a + n - i) = temp;
 	}
 
 }
