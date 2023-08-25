@@ -1,11 +1,13 @@
 
 
 /**
- * main - Entry point
+ * string_toupper - Entry point
  *
- * Description:
+ * Description: changes a string from lower to uppercase
  *
- * Return: 0
+ * @s: a string array
+ *
+ * Return: array s
  */
 
 char *string_toupper(char *s)
