@@ -10,21 +10,21 @@
  * Return: array s
  */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i;
 
 	for (i = 0; s[i] != 0; i++)
 	{
-		if (s[i] = 32 || s[i] = 9)
+		if (s[i] == 32 || s[i] == 9)
 		{
 			if (s[i + 1] >= 97 && s[i + 1] <= 122)
-				s[i + 1] = s[i + 1] - 32;
+				s[i + 1] == s[i + 1] - 32;
 		}
-		else if (s[i] = 92 && s[i + 1] = 110)
+		else if (s[i] == 92 && s[i + 1] == 110)
 		{
-			if (s[i + 2] >= 97 && s[i + 2] <= 122)
-				s[i + 2] = s[i + 2] - 32;
+			if (s[i + 2] >= 7 && s[i + 2] <= 122)
+				s[i + 2] == s[i + 2] - 32;
 		}
 	}
 
