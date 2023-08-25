@@ -8,17 +8,17 @@
  * Return: 0
  */
 
-void reverse_array(int *a, int a)
+void reverse_array(int *a, int n)
 {
 
 	int i = 0;
 	int temp;
 
-	for (; i < a / 2; i++)
+	for (; i < n / 2; i++)
 	{
-		temp = a[i];
-		a[i] = a[a - i];
-		a[a - i] = temp;
+		temp = a[n];
+		a[n] = a[n - i];
+		a[n - i] = temp;
 	}
 
 }
