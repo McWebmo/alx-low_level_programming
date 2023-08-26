@@ -21,7 +21,7 @@ char *leet(char *s)
 		for (l = 0; s[i] != abc[l]; l++)
 			continue;
 		if (s[i] == abc[l])
-			s[i] == leet[l];
+			s[i] = leet[l];
 	}
 
 	return (s);
