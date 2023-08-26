@@ -11,7 +11,7 @@
 char *leet(char *s)
 {
 
-	char abc[10] = {a, A, e, E, o, O, t, T, l, L};
+	char abc[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int leet[10] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
 	int i;
 
