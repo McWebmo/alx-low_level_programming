@@ -17,9 +17,8 @@ int func(int i, int n)
 	else if (i * i > n)
 		return (-1);
 
-	func(i, n);
 
-	return(i);
+	return(func(i, n));
 }
 
 int _sqrt_recursion(int n)
