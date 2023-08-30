@@ -15,4 +15,6 @@ int _sqrt_recursion(int n);
 
 int secondary(int i, int n);
 
+void _print_rev_recursion(char *s);
+
 #endif
