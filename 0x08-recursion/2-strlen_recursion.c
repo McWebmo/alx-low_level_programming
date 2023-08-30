@@ -1,11 +1,13 @@
 
 
 /**
- * main - Entry point
+ * _strlen_recursion - Entry point
  *
- * Description:
+ * Description: a function that returns the length of a string using recursion
  *
- * Return: 0
+ * @s: string
+ *
+ * Return: length
  */
 
 int _strlen_recursion(char *s)
