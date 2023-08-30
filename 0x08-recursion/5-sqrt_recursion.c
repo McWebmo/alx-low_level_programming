@@ -18,6 +18,8 @@ int func(int i, int n)
 		return (-1);
 
 	func(i, n);
+
+	return(i);
 }
 
 int _sqrt_recursion(int n)
