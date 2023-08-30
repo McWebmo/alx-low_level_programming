@@ -8,18 +8,23 @@
  * Return: 0
  */
 
+int func(int i, int n)
+{
+	if (i * i == n)
+		return (i);
+	else if (i * i < n)
+		i++;
+	else if (i * i > n)
+		return (-1);
+
+	func(i, n);
+}
+
 int _sqrt_recursion(int n)
 {
 
 	int i = 0;
 
-	if (i * i >= n)
-		return (-1);
-	else if (i * i == n)
-		return (i);
+	return (func(i, n));
 
-	if (i * i < n)
-		i++;
-		
-	return (_sqrt_recursion(i));
 }
