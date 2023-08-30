@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _print_rev_recursion - Entry point
  *
- * Description:
+ * Description: prints a string in reverse
  *
- * Return: 0
+ * @s: string to be printed in reverse
+ *
+ * Return: void
  */
 
 void _print_rev_recursion(char *s)
