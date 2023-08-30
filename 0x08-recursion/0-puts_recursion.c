@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ *  _puts_recursion - Entry point
  *
- * Description:
+ * Description: prints a string, followed by a new line by recursion
  *
- * Return: 0
+ * @s: any string pointer
+ *
+ * Return: void
  */
 
 void _puts_recursion(char *s)
