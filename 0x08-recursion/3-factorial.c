@@ -1,11 +1,13 @@
 
 
 /**
- * main - Entry point
+ * factorial - Entry point
  *
- * Description:
+ * Description: finds factorial of a number
  *
- * Return: 0
+ * @n: any integer
+ *
+ * Return: factorial of n, -1 indicates error
  */
 
 int factorial(int n)
