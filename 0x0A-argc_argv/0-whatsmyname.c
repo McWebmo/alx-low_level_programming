@@ -6,6 +6,8 @@
  *
  * Description: prints the files name
  *
+ * @argc: number of arguments
+ * @argv: array of strings of arguments
  * Return: 0
  */
 
