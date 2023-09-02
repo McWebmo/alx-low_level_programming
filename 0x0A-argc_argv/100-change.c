@@ -1,45 +1,134 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * main - prints the minimum number of coins to
- * make change for an amount of money
+ * main - prints minimum number of coins given the change
+ *
+ * twentyfives - returns number of 25 coins
+ * tens - returns number fo 10 coins
+ * fives - returns number of 5 coins
+ * twos - return number of 2 coins
+ * ones - return number of 1 coins
+ *
  * @argc: number of arguments
  * @argv: array of arguments
  *
  * Return: 0 (Success), 1 (Error)
  */
+
+
+int twentyfives(int x)
+{
+	int y = x / 25;
+	if (x / 25 < 1)
+		return (0);
+	else
+		return (y);
+}
+
+int tens(int x)
+{
+	int y = x / 10;
+	if (x / 10 < 1)
+		return (0);
+	else
+		return (y);
+}
+
+int fives(int x)
+{
+	int y = x / 5;
+	if (x / 5 < 1)
+		return (0);
+	else
+		return (y);
+}
+
+int twos(int x)
+{
+	int y = x / 2;
+	if (x / 2 < 1)
+		return (0);
+	else
+		return (y);
+}
+
+
 int main(int argc, char *argv[])
 {
-	int num, j, result;
-	int coins[] = {25, 10, 5, 2, 1};
 
-	if (argc != 2)
+	int cents;
+	scanf("%d", &cents);
+	int coins = 0;
+	(void)argc;
+
+	while (cents > 0)
 	{
-		printf("Error\n");
-		return (1);
-	}
 
-	num = atoi(argv[1]);
-	result = 0;
-
-	if (num < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (j = 0; j < 5 && num >= 0; j++)
-	{
-		while (num >= coins[j])
+		if (cents > 25)
 		{
-			result++;
-			num -= coins[j];
+			coins += twentyfives(cents);
+			cents -= twentyfives(cents) * 25;
+			continue;
 		}
+		else if (cents == 25)
+		{
+			coins++;
+			break;
+		}
+		else if (cents < 25)
+		{
+			if (cents > 10)
+			{
+				coins += tens(cents);
+				cents -= tens(cents) * 10;
+				continue;
+			}
+			else if (cents == 10)
+			{
+				coins++;
+				break;
+			}
+			else if (cents < 10)
+			{
+				if (cents > 5)
+				{
+					coins += fives(cents);
+					cents -= fives(cents) * 5;
+					continue;
+				}
+				else if (cents == 5)
+				{
+					coins++;
+					break;
+				}
+				else if (cents < 5)
+				{
+					if (cents > 2)
+					{
+						coins += twos(cents);
+						cents -= twos(cents) * 2;
+						continue;
+					}
+					else if (cents == 2)
+					{
+						coins++;
+						break;
+					}
+					else if (cents < 2)
+					{
+						coins++;
+						cents--;
+						break;
+					}
+				}
+			}
+		}
+
 	}
 
-	printf("%d\n", result);
+	printf("%d\n", coins);
 	return (0);
 }
+
 
