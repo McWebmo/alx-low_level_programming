@@ -4,9 +4,12 @@
 /**
  * main - Entry point
  *
- * Description:
+ * Description: add numbers from argument
  *
- * Return: 0
+ * @argc: number of arguments
+ * @argv: array of strings of arguments
+ *
+ * Return: 0 if everything okay, 1 if error
  */
 
 int main(int argc, char *argv[])
