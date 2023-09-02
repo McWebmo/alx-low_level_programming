@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -11,25 +12,21 @@
 int main(int argc, char *argv[])
 {
 
-	int i;
+	char *c;
 	int sum = 0;
 
-	if (*argc == 1)
-		printf("0");
-	else
+	while (--argc)
 	{
-		for (i = 1; i < *argc; i++)
-		{
-			if (*argv[i] >= '0' || *argv[i] <= '9')
-			{
-				sum = sum + *(argv + i);
-			}
-			else if (*argv[i] <= '0' || *argv[i] >= '9')
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-		}
+
+		sum = sum + atoi(argv[argc]);
 	}
 
+	printf("%d\n", sum);
+	return (0);
 }
