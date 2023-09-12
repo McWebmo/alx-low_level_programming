@@ -3,11 +3,13 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * print_dog - Entry point
  *
- * Description:
+ * Description: prints info of a dog if exists
  *
- * Return: 0
+ * @d: pointer to struct dog
+ *
+ * Return: void
  */
 
 void print_dog(struct dog *d)
